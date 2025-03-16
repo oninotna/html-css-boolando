@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 img {
@@ -12,6 +13,7 @@ img {
 
 a {
     text-decoration: none;
+    color: unset;
 }
 
 ul {
@@ -28,9 +30,165 @@ ul {
 } */
 
 .container {
-    max-width: 1100px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* HEADER */
+header {
+    background-color: #ff6900;
+    color: white;
+    box-shadow: 0px 3px #00000033;
+    margin-bottom: 2rem;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    align-items: center;
+}
+
+.page-header li {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.header-logo {
+    width: 200px;
+}
+
+.type-age li {
+    padding-right: 1rem;
+}
+
+.icon-button li {
+    padding-left: 1rem;
+}
+/* FINE HEADER */
+
+/* INIZIO GRID SECTION */
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30rem; 
+    margin-top: 3rem;
+    position: relative;
+}
+
+.card-photo {
+    position: relative;
+}
+
+.main-photo {
+    position: absolute;
+}
+
+.hover-photo {
+    position: absolute;
+    z-index: -1;
+}
+
+.card-photo:hover .hover-photo {
+    z-index: 1;
+}
+
+.brand {
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 43.5rem;
+}
+
+.model {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.discount-price {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+
+.wishlist {
+    font-size: 3.5rem;
+    padding: 0px 20px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 0px;
+}
+.wishlist:hover {
+    color: red;
+}
+
+.discount {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 130px;
+}
+
+.eco {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 70px;
+    bottom: 130px;
+}
+/* FINE GRID SECTION */
+
+/* INIZIO FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 5rem;
+    padding: 2rem 0rem;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-link {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.icon-link {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.icon-link li {
+    margin-left: 1rem;
+}
+
+.info-link li {
+    margin-right: 1rem;
 }
